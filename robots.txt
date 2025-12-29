@@ -1,0 +1,3 @@
+User-agent: *
+Allow: /
+Sitemap: https://pmes-theory.org/sitemap.xml
