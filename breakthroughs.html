@@ -41,22 +41,21 @@
             text-align: center;
             color: #1a237e;
             padding-bottom: 25px;
-            margin-bottom: 40px;
+            margin-bottom: 60px; /* ZWIĘKSZONE: z 40px na 60px */
             border-bottom: 2px solid #e8eaf6;
             position: relative;
             font-size: 2.5em;
+            padding-top: 10px; /* DODANE: padding u góry */
         }
         
-        h1:after {
-            content: '⚛';
-            position: absolute;
-            bottom: -20px;
-            left: 50%;
-            transform: translateX(-50%);
-            background: white;
-            padding: 0 20px;
-            font-size: 1.5em;
+        /* POPRAWIONE: znaczek atomu poniżej tytułu */
+        .atom-decoration {
+            text-align: center;
+            font-size: 2em;
             color: #3949ab;
+            margin-top: -40px; /* Ustawienie poniżej linii */
+            margin-bottom: 30px;
+            display: block;
         }
         
         .subtitle {
@@ -68,6 +67,7 @@
             max-width: 800px;
             margin-left: auto;
             margin-right: auto;
+            margin-top: -20px; /* DOSTOSOWANE: aby był bliżej znaczka */
         }
         
         .breakthroughs-list {
@@ -237,6 +237,29 @@
             
             h1 {
                 font-size: 2em;
+                margin-bottom: 50px; /* DOSTOSOWANE dla mobile */
+            }
+            
+            .atom-decoration {
+                font-size: 1.8em;
+                margin-top: -35px;
+            }
+            
+            .subtitle {
+                margin-top: -15px;
+            }
+        }
+        
+        @media (max-width: 480px) {
+            h1 {
+                font-size: 1.8em;
+                margin-bottom: 45px;
+                padding-top: 5px;
+            }
+            
+            .atom-decoration {
+                font-size: 1.6em;
+                margin-top: -30px;
             }
         }
     </style>
@@ -245,6 +268,7 @@
 <body>
     <div class="container">
         <h1>Key Theoretical Breakthroughs</h1>
+        <div class="atom-decoration">⚛</div>
         <div class="subtitle">Revolutionary discoveries and conceptual advances in the PMES Theory framework</div>
         
         <div class="categories">
@@ -256,6 +280,7 @@
         </div>
         
         <ol class="breakthroughs-list">
+            <!-- Pozostała zawartość bez zmian -->
             <li class="breakthrough-item">
                 <div class="breakthrough-title">
                     <i class="fas fa-project-diagram breakthrough-icon"></i>
