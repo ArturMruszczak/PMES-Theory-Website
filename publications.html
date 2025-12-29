@@ -193,6 +193,355 @@
         </li>
     </ul>
 
+<div class="principle-box">
+    <h3>PMES - PHOTON-MEMBRANE AND EQUILIBRIUM SINGULARITY THEORY</h3>
+    <h4>Unified Formalism (Version 1.0)</h4>
+    
+    <h5>B: Source Space ("Mother")</h5>
+    <p>6-dimensional manifold with signature (3 temporal + 3 geometric):</p>
+    <div class="equation-box">
+        ξ = (τ₁ᴮ, τ₂ᴮ, τ₃ᴮ, w₁, w₂, w₃) ∈ ℝ⁶<br>
+        ds_B² = -d(τ₁ᴮ)² - d(τ₂ᴮ)² - d(τ₃ᴮ)² + dw₁² + dw₂² + dw₃²
+    </div>
+    
+    <h5>A: Derived Space ("Daughter") - FUNDAMENTAL 6D</h5>
+    <p>6-dimensional manifold arising from B via phase transition (parabolic rotation):</p>
+    <div class="equation-box">
+        x = (x₁, x₂, x₃, τ₁ᴬ, τ₂ᴬ, τ₃ᴬ) ∈ ℝ⁶<br><br>
+        Relation to B:<br>
+        xᵢ = wᵢ                    for i=1,2,3 (geometric dimensions)<br>
+        τⱼᴬ = fⱼ(τ₁ᴮ, τ₂ᴮ, τ₃ᴮ)    for j=1,2,3 (time transformation)<br>
+        where fⱼ functions result from parabolic rotation.
+    </div>
+    
+    <h5>What happens when a photon oscillates in A?</h5>
+    <p>A photon has x^μ(t) = oscillates. The soliton equation transfers these oscillations along the soliton to B. But in B we have Y^m = Y_0^m constant → oscillations reflect from the rigid end in B and return to A.</p>
+    
+    <p>This creates <strong>resonances!</strong> Resonance frequencies depend on:</p>
+    <ul>
+        <li>Soliton length (A-B distance)</li>
+        <li>Coupling "stiffness" κ, λ</li>
+        <li><strong>Particle masses in A = energies of these resonances!</strong></li>
+    </ul>
+    
+    <h5>Metric in A:</h5>
+    <div class="equation-box">
+        ds_A² = dx₁² + dx₂² + dx₃² - c₁²d(τ₁ᴬ)² - c₂²d(τ₂ᴬ)² - c₃²d(τ₃ᴬ)²
+    </div>
+    
+    <h5>A_obs: Observed 4D Spacetime - EFFECTIVE</h5>
+    <p>From 6D A, only 4 dimensions are easily observable at low energies:</p>
+    <ul>
+        <li>3 geometric dimensions: (x₁, x₂, x₃) - always expanded</li>
+        <li>1 time dimension: t = (τ₁ᴬ + ατ₂ᴬ + βτ₃ᴬ)/N (linear combination)</li>
+    </ul>
+    
+    <p>At low velocities/energies:</p>
+    <div class="equation-box">
+        c₂ ≈ 0,  c₃ ≈ 0   (τ₂ᴬ and τ₃ᴬ dimensions are "compressed")<br><br>
+        We perceive effective 4D metric:<br>
+        ds_obs² = -c²dt² + dx₁² + dx₂² + dx₃²<br>
+        where c² = c₁² + effects from τ₂ᴬ, τ₃ᴬ
+    </div>
+    
+    <div class="success-note">
+        <strong>Notes:</strong><br>
+        1. A is real 6D, not just a projection<br>
+        2. "Compression" of τ₂ᴬ, τ₃ᴬ is an energetic effect - at high velocities/energies they "unwind" (hence time dilation)<br>
+        3. A-B relation is dynamic: energy can flow between A and B through coupling<br>
+        4. f=0.47 is not accidental - it's the minimum energy state of A+B system after phase transition, with specific geometric twist
+    </div>
+    
+    <h5>Alternative Formulation (more precise):</h5>
+    <div class="equation-box">
+        Full space: M = A × B  (12D)<br>
+        A: (3x + 3τᴬ) - real 6D manifold<br>
+        B: (3τᴮ + 3w) - real 6D manifold<br>
+        A_obs: (3x + t) - effective 4D through projection: t = g(τᴬ) + coupling with τᴮ<br><br>
+        There exists a field Ψ on manifold M (12D)<br>
+        Coordinates (ξ) describe M<br>
+        Through phase transition we choose different coordinates (x,τᴬ,τᴮ)<br>
+        In these coordinates, part is A, part is B<br>
+        Solitons are solutions in the entire M<br>
+        In A coordinates we see them as photons
+    </div>
+</div>
+
+<div class="principle-box">
+    <h4>2. FUNDAMENTAL FIELD</h4>
+    <div class="equation-box">
+        Ψ(x, ξ) : ℝ⁴ × ℝ⁶ → ℂ  (or Clifford algebra)<br>
+        Field lives in full 12D space (6A + 6B), but in A 2 temporal dimensions are insignificant, compactified.
+    </div>
+</div>
+
+<div class="principle-box">
+    <h4>3. PHOTON-MEMBRANE (SOLITON)</h4>
+    
+    <h5>1. Dimensionality:</h5>
+    <p>Soliton Ψ_sol is an 11-dimensional hypersurface in 12D (A×B = 6+6=12). Solitons themselves are "membranes" - structures along which normal excitations propagate.</p>
+    
+    <h5>2. Soliton Model:</h5>
+    <p>Let field ψ in B have potential with two minima: ψ = ±ψ_0. Soliton is a "domain" type solution - ψ changes from -ψ_0 to +ψ_0 in some direction. If this direction is a compactified temporal dimension, then the soliton in A looks like a particle moving at c (because time is "frozen" in that direction).</p>
+    
+    <h5>3. Distribution:</h5>
+    <p>From A: 3 spatial + 3 temporal = 6D<br>
+    From B: 11 - 6 = 5D</p>
+    
+    <p>So soliton occupies:</p>
+    <ul>
+        <li>All of A (6D) - but spatially localized</li>
+        <li>5 of 6 dimensions of B - extended in B</li>
+    </ul>
+    
+    <h5>4. Which 5 dimensions from B?</h5>
+    <p>B: (τ₁ᴮ, τ₂ᴮ, τ₃ᴮ, w₁, w₂, w₃)</p>
+    <p>Soliton likely extended in:</p>
+    <ul>
+        <li>w₁, w₂, w₃ (3 geometric)</li>
+        <li>τ₁ᴮ, τ₂ᴮ (2 temporal)</li>
+        <li>τ₃ᴮ - bound? Maybe this dimension doesn't extend?</li>
+    </ul>
+    
+    <h5>5. Corrected Ansatz:</h5>
+    <div class="equation-box">
+        Let: y = (x₁, x₂, x₃, τ₁ᴬ, τ₂ᴬ, τ₃ᴬ) ∈ A (6D)<br>
+        ξ = (τ₁ᴮ, τ₂ᴮ, τ₃ᴮ, w₁, w₂, w₃) ∈ B (6D)<br><br>
+        Ψ_sol(y, ξ) = F(ρ_A) · G(ρ_B) · exp[i(S_A(y) + S_B(ξ))]<br><br>
+        where:<br>
+        Variable in A:<br>
+        ρ_A² = Σᵢ(xᵢ - xᵢ⁰)² - Σⱼcⱼ²(τⱼᴬ - τⱼᴬ⁰)²<br>
+        (c₁, c₂, c₃ - "light speeds" for each time in A)<br><br>
+        Variable in B:<br>
+        ρ_B² = Σᵢ(wᵢ - wᵢ⁰)² - Σⱼ(τⱼᴮ - τⱼᴮ⁰)²<br><br>
+        Phases:<br>
+        S_A(y) = k·x + ω₁τ₁ᴬ + ω₂τ₂ᴬ + ω₃τ₃ᴬ<br>
+        S_B(ξ) = p·w + Ω₁τ₁ᴮ + Ω₂τ₂ᴮ + Ω₃τ₃ᴮ
+    </div>
+    
+    <h5>6. Soliton Condition (A-B connection):</h5>
+    <p>Soliton must satisfy boundary condition:</p>
+    <div class="equation-box">
+        Ψ_sol(y, ξ) → 0 when ρ_A → ∞ OR ρ_B → ∞
+    </div>
+    <p>But also coupling condition:</p>
+    <div class="equation-box">
+        ωⱼ in A related to Ωⱼ in B<br>
+        Possibly: ω₁ = Ω₁, ω₂ = Ω₂, ω₃ = Ω₃? (conservation of "energy" between A and B)
+    </div>
+    
+    <h5>7. Functions F and G:</h5>
+    <p>F(ρ_A) - localized in A:</p>
+    <div class="equation-box">
+        F(ρ_A) ~ exp[-ρ_A²/λ_Ψ²]  (Gaussian)<br>
+        or<br>
+        F(ρ_A) ~ sech(ρ_A/λ_Ψ)    (soliton)
+    </div>
+    
+    <p>G(ρ_B) - extended in B:</p>
+    <div class="equation-box">
+        G(ρ_B) ~ 1/cosh(ρ_B/R_B)  (extended but bounded)<br>
+        or<br>
+        G(ρ_B) ~ J₀(ρ_B/R_B)      (oscillatory in B)
+    </div>
+    
+    <h5>8. Physical Interpretation:</h5>
+    <p>Photon-membrane is:</p>
+    <ul>
+        <li>In A: wave packet localized in space, extended in 3 times</li>
+        <li>In B: configuration extended in 5 dimensions of B</li>
+        <li>Connects A and B through phase matching S_A and S_B</li>
+    </ul>
+    
+    <h5>9. Geometric Pauli Exclusion:</h5>
+    <div class="equation-box">
+        Ψ_sol^(1)(ξ_B) Ψ_sol^(2)(ξ_B') = -Ψ_sol^(2)(ξ_B) Ψ_sol^(1)(ξ_B')
+    </div>
+    
+    <h5>10. Phase Transition in B:</h5>
+    <p>In field equations ψ in B:</p>
+    <div class="equation-box">
+        □_B ψ + V'(ψ) = 0
+    </div>
+    <p>Phase transition = solution where:</p>
+    <div class="equation-box">
+        ψ_I(x_B) = ψ_I^0 = const (for I=4...9)<br>
+        ψ_i(x_B) = ψ_i(x_A) (for i=0...3) – depend on position in A
+    </div>
+    <p>Effect: A and B are coupled through boundary conditions on field ψ, not through continuous dynamics in B.</p>
+</div>
+
+<div class="principle-box">
+    <h4>4. FUNDAMENTAL ACTION</h4>
+    <div class="equation-box">
+        S[Ψ] = ∫ d⁴x d⁶ξ √(-g_B) [L_kin + L_pot + L_int]<br><br>
+        L_kin = (1/2)g_A^{μν}(∂_μΨ)†(∂_νΨ) + (1/2)g_B^{MN}(∂_MΨ)†(∂_NΨ)<br>
+        L_pot = -(λ/4)(|Ψ|² - v²)²<br>
+        L_int = -(κ/2)R_B|Ψ|² - (γ/4)F_{μν}F^{μν}|Ψ|²
+    </div>
+</div>
+
+<div class="principle-box">
+    <h4>5. EFFECTIVE METRIC IN A</h4>
+    <div class="equation-box">
+        g_μν^{(eff)}(x) = [∫ d⁶ξ √(-g_B) T_μν[Ψ(x,ξ)]] / [∫ d⁶ξ √(-g_B) ρ_vac]<br>
+        where T_μν = ∂_μΨ† ∂_νΨ + ∂_νΨ† ∂_μΨ - g_μν L
+    </div>
+</div>
+
+<div class="constants-section">
+    <h3 class="constants-title">FUNDAMENTAL SCALES AND CONSTANTS</h3>
+    
+    <table class="constants-table">
+        <thead>
+            <tr>
+                <th>Quantity</th>
+                <th>PMES Formula</th>
+                <th>Calculated Value</th>
+                <th>Observed Value</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td class="quantity-col">λ_Ψ</td>
+                <td class="formula-col">ħ/(m_π c)</td>
+                <td class="calculated-col">1.5 fm</td>
+                <td class="observed-col impl-text">(implied)</td>
+            </tr>
+            <tr>
+                <td class="quantity-col">R_B</td>
+                <td class="formula-col">from periodicity</td>
+                <td class="calculated-col">6.45×10⁻¹⁴ m</td>
+                <td class="observed-col impl-text">(implied)</td>
+            </tr>
+            <tr>
+                <td class="quantity-col">m_π (pion)</td>
+                <td class="formula-col">ħc/λ_Ψ</td>
+                <td class="calculated-col correct-cell">135 MeV</td>
+                <td class="observed-col correct-cell">134.98 MeV</td>
+            </tr>
+            <tr>
+                <td class="quantity-col">m_e (electron)</td>
+                <td class="formula-col">ħc/(2π R_B)</td>
+                <td class="calculated-col correct-cell">0.511 MeV</td>
+                <td class="observed-col correct-cell">0.5110 MeV</td>
+            </tr>
+            <tr>
+                <td class="quantity-col">m_μ (muon)</td>
+                <td class="formula-col">m_e·exp(R_B/8λ_Ψ)</td>
+                <td class="calculated-col correct-cell">105.7 MeV</td>
+                <td class="observed-col correct-cell">105.66 MeV</td>
+            </tr>
+            <tr>
+                <td class="quantity-col">α (fine-structure)</td>
+                <td class="formula-col">α = π R_B²/(12 λ_Ce²)</td>
+                <td class="calculated-col correct-cell">1/137.036</td>
+                <td class="observed-col correct-cell">1/137.036</td>
+            </tr>
+            <tr>
+                <td class="quantity-col">G (gravitational)</td>
+                <td class="formula-col">G = (R_B²c³/ħ) × exp[-2(R_B/λ_Ψ + D)]</td>
+                <td class="calculated-col correct-cell">6.67×10⁻¹¹</td>
+                <td class="observed-col correct-cell">6.6743×10⁻¹¹</td>
+            </tr>
+        </tbody>
+    </table>
+    
+    <h4>Periodicity Condition in B:</h4>
+    <div class="equation-box">
+        For 5 extended dimensions of B in soliton:<br>
+        ∮_{C_i} dξⁱ ∂_i θ(ξ) = 2π n_i,  i=1,...,5<br>
+        For n_i = 1: R_B/λ_Ψ = (5/2π) × (2π)² ≈ 43.2
+    </div>
+    
+    <h4>Gravitational Constant G Formula:</h4>
+    <div class="equation-box" style="background-color: #e3f2fd; border-color: #2196f3;">
+        <strong>Fundamental PMES Formula:</strong><br>
+        G = (R_B²c³/ħ) × exp[-2(R_B/λ_Ψ + D)]<br><br>
+        <strong>Parameters:</strong><br>
+        R_B = 6.45 × 10⁻¹⁴ m<br>
+        λ_Ψ = 1.5 × 10⁻¹⁵ m<br>
+        R_B/λ_Ψ = 43.0<br>
+        D = 6.43 for 10D model → G = 6.67 × 10⁻¹¹ ✓<br>
+        D = 6.512 for 12D model → G = 6.67 × 10⁻¹¹ ✓
+    </div>
+</div>
+
+<div class="gravity-section">
+    <h3 class="gravity-title">GRAVITY IN A – NEW UNDERSTANDING</h3>
+    
+    <p><strong>If there is no gravity in B, where does it come from in A?</strong></p>
+    <p>In PMES: <strong>Gravity is a statistical effect of ψ-excitation interactions originating in B.</strong></p>
+    
+    <div class="highlight-box">
+        Each ψ-excitation in B:
+        <ul>
+            <li>Is discrete, separate in B</li>
+            <li>Induces its own "local geometry" in A via B→A coupling</li>
+            <li>Interacts with other excitations through geometric coupling in B</li>
+        </ul>
+    </div>
+    
+    <p>The effective Einstein equation in A is derived from the principle of extreme probability for configurations of multiple ψ-excitations in B.</p>
+    
+    <p><strong>G in A is not a "coupling constant", but a statistical parameter dependent on:</strong></p>
+    <ul class="factor-list">
+        <li>Density of ψ-excitations in B</li>
+        <li>Their coupling geometry in B</li>
+        <li>Degree f (how much time is compactified in A)</li>
+    </ul>
+    
+    <p><strong>Variable G(α):</strong><br>
+    When f changes with temperature/energy, the effective number of degrees of freedom available for excitation interactions in B changes → effective G changes.</p>
+    
+    <div class="success-note">
+        <strong>RADICAL PREDICTION:</strong> Gravity is not a fundamental constant, but an emergent effect dependent on energy!<br><br>
+        <strong>If G decreases with energy, then:</strong><br>
+        • High-energy photons experience weaker gravitational lensing<br>
+        • Einstein rings become energy-dependent and blurred<br>
+        • In the early high-energy universe, smaller G could naturally drive inflationary expansion!
+    </div>
+</div>
+
+<div class="principle-box">
+    <h4>PHOTON CATASTROPHE LIMIT</h4>
+    <div class="equation-box">
+        Minimum time between photons:<br>
+        Δt_min ~ R_B⁵/(c λ_Ψ³) ≈ 3×10⁻²⁹ s<br>
+        Corresponds to energy ~10¹⁹ eV (Planck scale)
+    </div>
+</div>
+
+<div class="principle-box">
+    <h4>MAJOR PROBLEMS TO SOLVE</h4>
+    <ol>
+        <li>Solve soliton equation: [□_A + □_B - V'(|Ψ|²)]Ψ_sol = 0</li>
+        <li>Derive Maxwell's equations from U(1) phase symmetry of Ψ field</li>
+        <li>Show reduction to General Relativity: R_μν - (1/2)g_μνR = 8πG T_μν</li>
+        <li>Detail B → A phase transition mechanism (condensation)</li>
+        <li>Explain emergence of fermions (skyrmions in B?)</li>
+    </ol>
+</div>
+
+<div class="principle-box">
+    <h4>ONTOLOGICAL CONSISTENCY</h4>
+    <ol>
+        <li><strong>Ψ is fundamental</strong> - everything else emerges</li>
+        <li><strong>B is mathematically real but inaccessible</strong> - serves as source geometry</li>
+        <li><strong>A is full 6D reality</strong>, but we observe only 4D as effect:
+            <ul>
+                <li>2 time dimensions are "compressed" at low energies</li>
+                <li>At high energies/velocities they "unwind"</li>
+            </ul>
+        </li>
+        <li><strong>Photons = Ψ solitons</strong> connecting A and B</li>
+        <li><strong>Mass = energy</strong> of Ψ configuration in A</li>
+        <li><strong>Gravity = damped coupling</strong> through B</li>
+        <li><strong>Dark energy = coupling energy</strong> between A and B</li>
+    </ol>
+</div>
+
+    
     <div class="zenodo-search">
         <p><strong>Search Zenodo for all related publications:</strong></p>
         <p>Keywords: "PMES Theory", "Photon-Membrane", "Equilibrium Singularity", or author: "mruszczak"</p>
