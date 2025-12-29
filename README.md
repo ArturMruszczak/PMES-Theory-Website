@@ -15,7 +15,7 @@ PMES is a novel theoretical framework that models reality as excitations of a fu
 Visit the official site: [https://pmes-theory.org](https://pmes-theory.org)
 
 ## Publications
-All research papers are available on Zenodo. Search for "PMES" or "[Your Name]".
+All research papers are available on Zenodo. Search for "PMES" or "mruszczak".
 
 ## License
 This website content is licensed under the MIT License.
