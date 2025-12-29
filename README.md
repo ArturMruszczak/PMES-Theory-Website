@@ -19,3 +19,21 @@ All research papers are available on Zenodo. Search for "PMES" or "[Your Name]".
 
 ## License
 This website content is licensed under the MIT License.
+markdown
+---
+keywords: |
+  unified field theory,
+  photon membrane,
+  equilibrium singularity,
+  PMES theory,
+  quantum gravity,
+  emergent spacetime,
+  black hole singularity,
+  geometric universe,
+  higher dimensions,
+  6D space,
+  soliton physics,
+  fundamental constants derivation,
+  variable gravitational constant,
+  Zenodo physics
+---
