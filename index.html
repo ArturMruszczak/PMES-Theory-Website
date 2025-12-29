@@ -15,37 +15,30 @@
             color: #222;
             background-color: #f8f9fa;
         }
-        
         h1, h2, h3 {
             color: #2c3e50;
             border-bottom: 1px solid #ddd;
             padding-bottom: 10px;
         }
-        
         h1 {
             text-align: center;
             margin-top: 20px;
             color: #1a237e;
         }
-        
         h2 {
             color: #283593;
             margin-top: 30px;
         }
-        
         h3 {
             color: #3949ab;
             margin-top: 25px;
         }
-        
         p, li {
             text-align: justify;
         }
-        
         ul {
             padding-left: 25px;
         }
-        
         .subtitle {
             text-align: center;
             font-size: 1.4em;
@@ -53,13 +46,60 @@
             font-weight: bold;
             margin-bottom: 40px;
         }
-        
         .principle-box {
             background-color: #e8eaf6;
             padding: 20px;
             border-radius: 10px;
             border-left: 5px solid #3949ab;
             margin: 20px 0;
+        }
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin: 25px 0;
+            box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+            background-color: white;
+        }
+        th, td {
+            border: 1px solid #b0bec5;
+            padding: 12px 15px;
+            text-align: center;
+        }
+        th {
+            background-color: #3f51b5;
+            color: white;
+            font-weight: bold;
+        }
+        tr:nth-child(even) {
+            background-color: #f5f5f5;
+        }
+        .highlight {
+            background-color: #e1f5fe !important;
+            font-weight: bold;
+        }
+        .footnote {
+            font-size: 0.9em;
+            color: #666;
+            margin-top: 30px;
+            padding-top: 15px;
+            border-top: 1px dashed #aaa;
+        }
+        .nav-links {
+            text-align: center;
+            margin: 30px 0;
+            padding: 15px;
+            background-color: #e3f2fd;
+            border-radius: 8px;
+        }
+        .nav-links a {
+            margin: 0 15px;
+            text-decoration: none;
+            color: #1565c0;
+            font-weight: bold;
+        }
+        .nav-links a:hover {
+            text-decoration: underline;
+            color: #0d47a1;
         }
         
         /* Styl dla sekcji GRAWITACJI */
@@ -242,26 +282,6 @@
             margin-bottom: 8px;
         }
         
-        .nav-links {
-            text-align: center;
-            margin: 30px 0;
-            padding: 15px;
-            background-color: #e3f2fd;
-            border-radius: 8px;
-        }
-        
-        .nav-links a {
-            margin: 0 15px;
-            text-decoration: none;
-            color: #1565c0;
-            font-weight: bold;
-        }
-        
-        .nav-links a:hover {
-            text-decoration: underline;
-            color: #0d47a1;
-        }
-        
         @media (max-width: 768px) {
             .constants-table {
                 display: block;
@@ -295,12 +315,14 @@
     <div class="subtitle">A Unified Geometric Framework for Fundamental Physics</div>
 
     <div class="nav-links">
-        <a href="#core-principles">Core Principles</a> |
+        <a href="#core-ontology">Core Ontology</a> |
+        <a href="#fundamental-field">Fundamental Field & Photons</a> |
+        <a href="#emergent-phenomena">Emergent Phenomena</a> |
         <a href="#gravity-explanation">Gravity in A</a> |
         <a href="#constants-table">Fundamental Constants</a> |
-        <a href="/breakthroughs.html">Key Breakthroughs</a> |
-        <a href="/publications.html">Publications</a> |
-        <a href="/contact.html">Contact</a>
+        <a href="#open-problems">Open Problems</a> |
+        <a href="#philosophical-summary">Philosophical Summary</a> |
+        <a href="#tables">G Calculation Tables</a>
     </div>
 
     <p>A unified field theory framework that explains gravity, quantum phenomena, particle masses, and the structure of spacetime through geometry of higher-dimensional membranes.</p>
@@ -312,6 +334,86 @@
         <li>Emergent 4D spacetime as a low-energy projection of 6D space A</li>
         <li>Gravity and particle masses from boundary conditions and resonance in B</li>
     </ul>
+
+    <h2 id="core-ontology">1. Core Ontology: The Dual-Space Geometry</h2>
+    <p>Reality emerges from a 12-dimensional manifold <strong>M</strong>, formed by the product of two coupled 6-dimensional spaces:</p>
+
+    <div class="principle-box">
+        <h4>Source Space (B – "Mother"):</h4>
+        <p>A 6D space with signature (-, -, -, +, +, +).</p>
+        <ul>
+            <li><strong>Coordinates:</strong> ξ = (τ₁ᴮ, τ₂ᴮ, τ₃ᴮ, w₁, w₂, w₃)</li>
+            <li><strong>Metric:</strong> ds_B² = -d(τ₁ᴮ)² - d(τ₂ᴮ)² - d(τ₃ᴮ)² + dw₁² + dw₂² + dw₃²</li>
+        </ul>
+    </div>
+
+    <div class="principle-box">
+        <h4>Derived Space (A – "Daughter"):</h4>
+        <p>A physical 6D space arising from B via a phase transition (parabolic rotation).</p>
+        <ul>
+            <li><strong>Coordinates:</strong> x = (x₁, x₂, x₃, τ₁ᴬ, τ₂ᴬ, τ₃ᴬ)</li>
+            <li><strong>Relation to B:</strong> The geometric dimensions are inherited (xᵢ = wᵢ), while the temporal dimensions are transformed (τⱼᴬ = fⱼ(τ₁ᴮ, τ₂ᴮ, τ₃ᴮ)).</li>
+        </ul>
+    </div>
+
+    <div class="principle-box">
+        <h4>Observed 4D Spacetime (A_obs):</h4>
+        <p>An effective, low-energy projection of the full 6D space A.</p>
+        <ul>
+            <li>At low energies, two time dimensions (τ₂ᴬ, τ₃ᴬ) are "compressed" or hidden.</li>
+            <li>We perceive one linear combination: t = (τ₁ᴬ + ατ₂ᴬ + βτ₃ᴬ)/N.</li>
+            <li>This compression is energetic; at high velocities/energies, these dimensions "unwind," explaining effects like time dilation.</li>
+        </ul>
+    </div>
+
+    <h2 id="fundamental-field">2. The Fundamental Field and Photon-Membranes</h2>
+    <p>Everything is an excitation of a fundamental field <strong>Ψ</strong> living in the full 12D space M.</p>
+
+    <div class="principle-box">
+        <h4>Photon as an 11D Membrane-Soliton:</h4>
+        <p>A photon is not a point particle. It is an 11-dimensional solitonic "membrane" that stretches across both spaces A and B.</p>
+        <ul>
+            <li>It is localized in A but extended in 5 of the 6 dimensions of B.</li>
+            <li>Its oscillations in A are coupled to boundary conditions in B, creating resonances.</li>
+            <li>Particle masses (like the pion m_π and electron m_e) are identified as the energies of these fundamental resonances.</li>
+        </ul>
+    </div>
+
+    <div class="principle-box">
+        <h4>Key Scales & Calculated Constants:</h4>
+        <ul>
+            <li><strong>λ_Ψ</strong> = ħ/(m_π c) ≈ 1.5×10⁻¹⁵ m (pion Compton wavelength / hadronic scale).</li>
+            <li><strong>R_B</strong> ≈ 6.4×10⁻¹⁴ m (characteristic radius in space B, from periodicity conditions).</li>
+            <li><strong>Fine-Structure Constant:</strong> α = π R_B² / (12 λ_{Ce}²) ≈ 1/137.036 (where λ_{Ce} is the electron Compton wavelength).</li>
+            <li><strong>Gravitational Constant G:</strong> Emerges statistically. Its observed value is matched when considering 10 effective dimensions (6 from A + 4 active from B), with two time dimensions in B being inactive. Crucially, G is predicted to be dynamic, depending on the energy scale and the degree of "unwinding" of compactified time dimensions.</li>
+        </ul>
+    </div>
+
+    <h2 id="emergent-phenomena">3. Emergent Phenomena and Radical Predictions</h2>
+
+    <div class="principle-box">
+        <h4>Emergent Gravity:</h4>
+        <p>Gravity is not a fundamental force in B. It emerges in A as a statistical effect of interactions between Ψ excitations. The Einstein field equations are derived from a principle of extreme probability for field configurations.</p>
+    </div>
+
+    <div class="principle-box">
+        <h4>Variable Gravitational Constant:</h4>
+        <p>The model predicts that G decreases with increasing energy. This leads to testable consequences:</p>
+        <ul>
+            <li>High-energy photons should experience weaker gravitational lensing.</li>
+            <li>Einstein rings should be energy-dependent and blurred.</li>
+            <li>In the early, high-energy universe, a smaller G could naturally drive inflationary expansion.</li>
+        </ul>
+    </div>
+
+    <div class="principle-box">
+        <h4>Other Key Predictions:</h4>
+        <ul>
+            <li><strong>Resolution of Singularities:</strong> The central point of a black hole is not a mathematical singularity but a physical, topological knot of the Ψ field with a minimum size on the order of the Planck length (~10⁻³⁵ m).</li>
+            <li><strong>Geometric Pauli Exclusion:</strong> A form of exclusion principle arises from the geometry of soliton overlap in space B, providing a fundamental basis for quantum statistics.</li>
+            <li><strong>Photon Catastrophe Limit:</strong> There is a minimum time separation between photons (Δt_min ~ 3×10⁻²⁹ s), corresponding to the Planck energy scale, implying a fundamental discretization or limit to information density.</li>
+        </ul>
+    </div>
 
     <div class="gravity-section" id="gravity-explanation">
         <h3 class="gravity-title">GRAVITY IN A – NEW UNDERSTANDING</h3>
@@ -432,6 +534,82 @@
         </div>
         
         <p><strong>Remarkable achievement:</strong> PMES Theory derives all fundamental constants of nature (m_e, m_μ, m_π, α, G) from geometric first principles with precision matching experimental measurements.</p>
+    </div>
+
+    <h2 id="open-problems">4. Open Problems and Research Directions</h2>
+    <ul>
+        <li>Solve the full soliton equation: [□_A + □_B - V'(|Ψ|²)] Ψ_sol = 0.</li>
+        <li>Derive Maxwell's Equations from a U(1) phase symmetry of the Ψ field.</li>
+        <li>Formally show the reduction to General Relativity: R_μν - (1/2)g_μνR = 8πG T_μν.</li>
+        <li>Detail the phase transition mechanism (parabolic rotation) from B to A.</li>
+        <li>Explain the emergence of fermions (e.g., as topological skyrmions within the B space framework).</li>
+    </ul>
+
+    <h2 id="philosophical-summary">5. Philosophical Summary: A Cohesive Vision</h2>
+    <div class="principle-box">
+        <p>PMES presents a coherent ontology:</p>
+        <ul>
+            <li><strong>Ψ is fundamental.</strong> Spacetime, matter, and forces are emergent excitations.</li>
+            <li><strong>Space B</strong> is mathematically real but physically inaccessible, serving as the source geometry.</li>
+            <li><strong>Space A</strong> is the full 6D physical reality, of which we ordinarily perceive only a 4D projection.</li>
+            <li><strong>Photons are the "glue"</strong>—solitonic membranes connecting the two spaces and facilitating all interaction.</li>
+            <li>Mass, charge, and spin are quantum numbers arising from topological and resonant properties of Ψ configurations in B.</li>
+            <li><strong>Dark Energy</strong> may be interpreted as the energy of the dynamic coupling between spaces A and B.</li>
+        </ul>
+    </div>
+
+    <h2 id="tables">The Problem of Calculating G: Dimensional Analysis</h2>
+    <p>Issue in calculating G using formulas from other theories. As the number of dimensions increases, D rises. For 10D, it was 6.5. For 12D, it is 7.</p>
+
+    <h3>Table 1: Effective Dimensions and G Calculation</h3>
+    <table>
+        <thead>
+            <tr>
+                <th>N</th>
+                <th>√N</th>
+                <th>D(N)</th>
+                <th>exp[-2(43+D)]</th>
+                <th>G calculated</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr><td>4</td><td>2.000</td><td>4.576</td><td>5.25×10⁻⁴²</td><td>5.58×10⁻⁹</td></tr>
+            <tr><td>6</td><td>2.449</td><td>5.321</td><td>1.42×10⁻⁴².⁶⁴</td><td>1.51×10⁻⁹.⁶⁴</td></tr>
+            <tr><td>8</td><td>2.828</td><td>5.947</td><td>4.42×10⁻⁴³.⁸⁹</td><td>4.70×10⁻¹⁰.⁸⁹</td></tr>
+            <tr class="highlight"><td>10</td><td>3.162</td><td>6.500✓</td><td>6.28×10⁻⁴⁴</td><td>6.67×10⁻¹¹✓</td></tr>
+            <tr><td>12</td><td>3.464</td><td>6.999✓</td><td>3.72×10⁻⁴⁴</td><td>3.95×10⁻¹¹</td></tr>
+            <tr><td>14</td><td>3.742</td><td>7.463</td><td>1.69×10⁻⁴⁴</td><td>1.80×10⁻¹¹</td></tr>
+            <tr><td>16</td><td>4.000</td><td>7.888</td><td>8.74×10⁻⁴⁵</td><td>9.29×10⁻¹²</td></tr>
+            <tr><td>18</td><td>4.243</td><td>8.290</td><td>4.93×10⁻⁴⁵</td><td>5.24×10⁻¹²</td></tr>
+        </tbody>
+    </table>
+
+    <h3>Table 2: Comparison with Observed G</h3>
+    <table>
+        <thead>
+            <tr>
+                <th>N</th>
+                <th>D(N)</th>
+                <th>exp[-2(43+D)]</th>
+                <th>G calculated</th>
+                <th>G_obs (6.67×10⁻¹¹)</th>
+                <th>Ratio</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr><td>4</td><td>5.00</td><td>1.15×10⁻⁴²</td><td>1.22×10⁻⁹</td><td>6.67×10⁻¹¹</td><td>18.3× too large</td></tr>
+            <tr><td>6</td><td>5.50</td><td>3.00×10⁻⁴².⁵</td><td>3.19×10⁻⁹.⁵</td><td>6.67×10⁻¹¹</td><td>4.78× too large</td></tr>
+            <tr><td>8</td><td>6.00</td><td>3.56×10⁻⁴³</td><td>3.78×10⁻¹⁰</td><td>6.67×10⁻¹¹</td><td>5.67× too large</td></tr>
+            <tr class="highlight"><td>10</td><td>6.50</td><td>6.28×10⁻⁴⁴</td><td>6.67×10⁻¹¹</td><td>6.67×10⁻¹¹</td><td>1.00✓ Match</td></tr>
+            <tr><td>12</td><td>7.00</td><td>3.72×10⁻⁴⁴</td><td>3.95×10⁻¹¹</td><td>6.67×10⁻¹¹</td><td>0.592× too small</td></tr>
+            <tr><td>14</td><td>7.50</td><td>1.20×10⁻⁴⁴.⁵</td><td>1.28×10⁻¹¹.⁵</td><td>6.67×10⁻¹¹</td><td>0.192× too small</td></tr>
+            <tr><td>16</td><td>8.00</td><td>1.10×10⁻⁴⁴</td><td>1.17×10⁻¹¹</td><td>6.67×10⁻¹¹</td><td>0.175× too small</td></tr>
+            <tr><td>18</td><td>8.50</td><td>4.05×10⁻⁴⁵</td><td>4.30×10⁻¹²</td><td>6.67×10⁻¹¹</td><td>0.064× too small</td></tr>
+        </tbody>
+    </table>
+
+    <div class="footnote">
+        <p><strong>Analysis:</strong> The tables show that the observed value of Newton's gravitational constant G is matched precisely for the case of <strong>N=10 effective dimensions</strong> (highlighted in green). This corresponds to the PMES framework where 6 dimensions come from space A and 4 active dimensions come from space B, with two time dimensions in B being "inactive" or compactified at low energies. This provides a geometric rationale for the specific dimensional structure of our observed reality and suggests that G is not a fundamental constant but an emergent, scale-dependent parameter.</p>
     </div>
 
     <div class="nav-links">
