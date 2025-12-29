@@ -379,6 +379,107 @@
         </ul>
     </div>
 
+<div class="principle-box" id="psi-field">
+    <h3>The Fundamental Ψ Field in PMES Theory</h3>
+    
+    <p>In PMES Theory, <strong>Ψ is the fundamental complex scalar field</strong> living in the full 12-dimensional manifold M = A × B.</p>
+    
+    <div class="equation-box" style="background-color: #f3e5f5; border-color: #7b1fa2;">
+        <strong>Field Definition:</strong><br>
+        Ψ(x^μ, ξ^a) : M → ℂ<br>
+        where x^μ ∈ A (6D), ξ^a ∈ B (6D)
+    </div>
+    
+    <h4>Field Equation of Motion:</h4>
+    <div class="equation-box" style="font-size: 1.1em;">
+        [□_A + □_B - V'(|Ψ|²)] Ψ = 0
+    </div>
+    
+    <p><strong>Where:</strong></p>
+    <ul>
+        <li>□_A = d'Alembertian operator in space A</li>
+        <li>□_B = d'Alembertian operator in space B</li>
+        <li>V(|Ψ|²) = self-interaction potential (nonlinear)</li>
+        <li>V' = derivative with respect to |Ψ|²</li>
+    </ul>
+    
+    <h4>The Photon as an 11D Membrane-Soliton:</h4>
+    <div class="equation-box">
+        Ψ_sol(x, ξ) = Φ(r_A) × χ(ξ_B) × exp[i(k·x - ωt)]
+    </div>
+    
+    <table class="constants-table" style="margin-top: 20px;">
+        <thead>
+            <tr>
+                <th>Component</th>
+                <th>Mathematical Form</th>
+                <th>Physical Meaning</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td class="quantity-col">Φ(r_A)</td>
+                <td class="formula-col">Φ₀ × sech(r_A/λ_Ψ) or Φ₀ × exp(-r_A²/2λ_Ψ²)</td>
+                <td>Radial profile in A (localization)</td>
+            </tr>
+            <tr>
+                <td class="quantity-col">χ(ξ_B)</td>
+                <td class="formula-col">χ₀ × cos(ξ_B/R_B) or χ₀ × J₀(ξ_B/R_B)</td>
+                <td>Profile in B (extension in 5 dimensions)</td>
+            </tr>
+            <tr>
+                <td class="quantity-col">exp[i(k·x-ωt)]</td>
+                <td class="formula-col">Phase factor</td>
+                <td>Oscillations/wave behavior</td>
+            </tr>
+        </tbody>
+    </table>
+    
+    <h4>Key Parameters of Ψ Field:</h4>
+    <ul>
+        <li><strong>λ_Ψ = ħ/(m_πc) ≈ 1.5 × 10⁻¹⁵ m</strong> - characteristic length scale (pion Compton wavelength)</li>
+        <li><strong>R_B ≈ 6.45 × 10⁻¹⁴ m</strong> - characteristic radius in space B (from periodicity conditions)</li>
+        <li><strong>Fundamental ratio:</strong> R_B/λ_Ψ = 43.0</li>
+    </ul>
+    
+    <h4>Self-Interaction Potential:</h4>
+    <div class="equation-box" style="background-color: #e8f5e9; border-color: #2e7d32;">
+        V(|Ψ|²) = μ²|Ψ|² + λ|Ψ|⁴  (φ⁴ potential)<br>
+        or<br>
+        V(|Ψ|²) = Λ⁴[1 - exp(-|Ψ|²/Ψ₀²)]  (non-perturbative)
+    </div>
+    
+    <h4>Boundary Conditions in B (Crucial for Quantization):</h4>
+    <div class="equation-box">
+        Ψ(x, ξ + L_B) = Ψ(x, ξ) × exp(iθ)
+    </div>
+    <p>Periodicity in B space leads to <strong>discrete resonance spectra</strong> corresponding to particle masses (m_e, m_π, m_μ).</p>
+    
+    <h4>Quantization of Ψ Field:</h4>
+    <div class="equation-box">
+        Ψ̂(x, ξ) = ∑_n [a_n ψ_n(x, ξ) + a_n⁺ ψ_n*(x, ξ)]
+    </div>
+    <p>where a_n, a_n⁺ are annihilation and creation operators, and ψ_n are eigenmodes.</p>
+    
+    <div class="success-note">
+        <strong>Physical Significance:</strong><br>
+        1. Ψ is FUNDAMENTAL - all particles, forces, and spacetime itself emerge as excitations of Ψ<br>
+        2. Photons are 11D solitonic membranes stretching across both A and B spaces<br>
+        3. Particle masses arise from resonant boundary conditions in space B<br>
+        4. The geometry of Ψ configurations in B gives rise to quantum numbers (charge, spin)<br>
+        5. Nonlinear self-interaction V(|Ψ|²) creates stable soliton solutions
+    </div>
+    
+    <div class="alpha-values">
+        <p><strong>Simplified Model for a Single Photon:</strong></p>
+        <div class="equation-box" style="background-color: #fff3e0; border-color: #f57c00;">
+            Ψ_γ(x, ξ) = A × exp(-|x|²/2λ_Ψ²) × cos(ξ⁵/R_B) × exp[i(k·x - ωt)]
+        </div>
+        <p>where ξ⁵ denotes the 5 dimensions of B in which the photon is extended.</p>
+    </div>
+</div>
+
+    
     <div class="principle-box">
         <h4>Key Scales & Calculated Constants:</h4>
         <ul>
