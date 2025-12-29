@@ -1,18 +1,353 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-    <title>Key Breakthroughs of PMES Theory</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Key Breakthroughs - PMES Theory</title>
+    <meta name="description" content="Major theoretical breakthroughs and discoveries of PMES Theory (Photon-Membrane & Equilibrium Singularity).">
+    <style>
+        body {
+            font-family: 'Georgia', serif;
+            line-height: 1.8;
+            margin: 0 auto;
+            max-width: 1100px;
+            padding: 40px 30px;
+            color: #222;
+            background-color: #f8f9fa;
+            background-image: linear-gradient(135deg, #f5f7fa 0%, #e4e8f0 100%);
+        }
+        
+        .container {
+            background-color: white;
+            padding: 60px 50px;
+            border-radius: 20px;
+            box-shadow: 0 15px 40px rgba(0, 0, 0, 0.1);
+            border-top: 8px solid #3f51b5;
+            position: relative;
+            overflow: hidden;
+        }
+        
+        .container:before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            height: 5px;
+            background: linear-gradient(to right, #3f51b5, #7986cb, #3f51b5);
+        }
+        
+        h1 {
+            text-align: center;
+            color: #1a237e;
+            padding-bottom: 25px;
+            margin-bottom: 40px;
+            border-bottom: 2px solid #e8eaf6;
+            position: relative;
+            font-size: 2.5em;
+        }
+        
+        h1:after {
+            content: '⚛';
+            position: absolute;
+            bottom: -20px;
+            left: 50%;
+            transform: translateX(-50%);
+            background: white;
+            padding: 0 20px;
+            font-size: 1.5em;
+            color: #3949ab;
+        }
+        
+        .subtitle {
+            text-align: center;
+            font-size: 1.3em;
+            color: #5d4037;
+            margin-bottom: 50px;
+            font-weight: 300;
+            max-width: 800px;
+            margin-left: auto;
+            margin-right: auto;
+        }
+        
+        .breakthroughs-list {
+            counter-reset: breakthrough-counter;
+            padding-left: 0;
+        }
+        
+        .breakthrough-item {
+            counter-increment: breakthrough-counter;
+            background: linear-gradient(to right, #f5f7ff, #ffffff);
+            margin-bottom: 35px;
+            padding: 35px 35px 35px 100px;
+            border-radius: 15px;
+            border-left: 6px solid #5c6bc0;
+            box-shadow: 0 8px 20px rgba(0,0,0,0.06);
+            position: relative;
+            transition: all 0.4s ease;
+            border: 1px solid #e8eaf6;
+        }
+        
+        .breakthrough-item:hover {
+            transform: translateX(10px);
+            box-shadow: 0 12px 25px rgba(0,0,0,0.1);
+            border-left-color: #3949ab;
+        }
+        
+        .breakthrough-item:before {
+            content: counter(breakthrough-counter);
+            position: absolute;
+            left: 25px;
+            top: 50%;
+            transform: translateY(-50%);
+            width: 50px;
+            height: 50px;
+            background: linear-gradient(135deg, #3949ab, #5c6bc0);
+            color: white;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 1.5em;
+            font-weight: bold;
+            box-shadow: 0 4px 10px rgba(57, 73, 171, 0.3);
+        }
+        
+        .breakthrough-title {
+            color: #1a237e;
+            font-size: 1.5em;
+            margin-bottom: 15px;
+            display: flex;
+            align-items: center;
+        }
+        
+        .breakthrough-icon {
+            margin-right: 15px;
+            font-size: 1.3em;
+            color: #3949ab;
+        }
+        
+        .breakthrough-content {
+            color: #444;
+            font-size: 1.1em;
+            line-height: 1.7;
+        }
+        
+        .significance-tag {
+            display: inline-block;
+            background: #e8eaf6;
+            color: #3949ab;
+            padding: 5px 15px;
+            border-radius: 20px;
+            font-size: 0.9em;
+            margin-top: 15px;
+            font-weight: bold;
+            border: 1px solid #c5cae9;
+        }
+        
+        .significance-high {
+            background: #ffecb3;
+            color: #ff8f00;
+            border-color: #ffd54f;
+        }
+        
+        .significance-fundamental {
+            background: #e1f5fe;
+            color: #0277bd;
+            border-color: #4fc3f7;
+        }
+        
+        .categories {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 15px;
+            justify-content: center;
+            margin: 50px 0;
+            padding: 25px;
+            background: #f5f5f5;
+            border-radius: 12px;
+        }
+        
+        .category {
+            background: white;
+            padding: 12px 25px;
+            border-radius: 8px;
+            font-weight: bold;
+            color: #3949ab;
+            border: 2px solid #c5cae9;
+            transition: all 0.3s ease;
+        }
+        
+        .category:hover {
+            background: #3949ab;
+            color: white;
+            transform: translateY(-3px);
+        }
+        
+        .back-home {
+            text-align: center;
+            margin-top: 60px;
+            padding-top: 40px;
+            border-top: 1px solid #e0e0e0;
+        }
+        
+        .back-home a {
+            display: inline-flex;
+            align-items: center;
+            padding: 16px 40px;
+            background: linear-gradient(to right, #3949ab, #5c6bc0);
+            color: white;
+            text-decoration: none;
+            border-radius: 10px;
+            font-weight: bold;
+            font-size: 1.1em;
+            transition: all 0.3s ease;
+            box-shadow: 0 6px 15px rgba(57, 73, 171, 0.2);
+        }
+        
+        .back-home a:hover {
+            background: linear-gradient(to right, #283593, #3949ab);
+            transform: translateY(-5px);
+            box-shadow: 0 10px 20px rgba(57, 73, 171, 0.3);
+        }
+        
+        .back-home i {
+            margin-right: 10px;
+        }
+        
+        @media (max-width: 768px) {
+            .container {
+                padding: 30px 20px;
+            }
+            
+            .breakthrough-item {
+                padding: 25px 25px 25px 80px;
+            }
+            
+            .breakthrough-item:before {
+                left: 15px;
+                width: 40px;
+                height: 40px;
+                font-size: 1.2em;
+            }
+            
+            .breakthrough-title {
+                font-size: 1.3em;
+            }
+            
+            h1 {
+                font-size: 2em;
+            }
+        }
+    </style>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
 </head>
 <body>
-    <h1>Key Theoretical Breakthroughs</h1>
-    <ol>
-        <li><strong>Dual-Space Geometry (A & B):</strong> Mathematical model of two coupled 6D spaces with complementary signatures.</li>
-        <li><strong>Parabolic Rotation Phase Transition:</strong> Mechanism transforming temporal dimensions in B to spatial dimensions in A.</li>
-        <li><strong>Photon as 11D Membrane-Soliton:</strong> Resolution of wave-particle duality through solitonic structure spanning both spaces.</li>
-        <li><strong>Resolution of Black Hole Singularity:</strong> Prediction of minimal topological knot ~10⁻³⁵ m instead of mathematical singularity.</li>
-        <li><strong>Derivation of Fundamental Constants:</strong> Quantitative predictions for α, G, m_e, m_μ, m_π from geometric parameters.</li>
-        <li><strong>Variable Gravitational Constant:</strong> Prediction that G depends on energy scale via unwinding of compact time dimensions.</li>
-    </ol>
-    <p><a href="/">← Back to Home</a></p>
+    <div class="container">
+        <h1>Key Theoretical Breakthroughs</h1>
+        <div class="subtitle">Revolutionary discoveries and conceptual advances in the PMES Theory framework</div>
+        
+        <div class="categories">
+            <div class="category">Geometric Foundation</div>
+            <div class="category">Particle Physics</div>
+            <div class="category">Gravity & Cosmology</div>
+            <div class="category">Quantum Foundations</div>
+            <div class="category">Unification</div>
+        </div>
+        
+        <ol class="breakthroughs-list">
+            <li class="breakthrough-item">
+                <div class="breakthrough-title">
+                    <i class="fas fa-project-diagram breakthrough-icon"></i>
+                    <strong>Dual-Space Geometry (A & B)</strong>
+                </div>
+                <div class="breakthrough-content">
+                    Mathematical model of two coupled 6D spaces with complementary signatures (-,-,-,+,+,+) for space B and derived physical space A. Provides the geometric foundation for all emergent phenomena.
+                </div>
+                <span class="significance-tag significance-fundamental">FOUNDATIONAL</span>
+            </li>
+            
+            <li class="breakthrough-item">
+                <div class="breakthrough-title">
+                    <i class="fas fa-sync-alt breakthrough-icon"></i>
+                    <strong>Parabolic Rotation Phase Transition</strong>
+                </div>
+                <div class="breakthrough-content">
+                    Mechanism transforming temporal dimensions in the source space B to spatial dimensions in the derived space A. Explains the origin of our 3+1 dimensional spacetime from a higher-dimensional geometric structure.
+                </div>
+                <span class="significance-tag">DIMENSIONAL ORIGIN</span>
+            </li>
+            
+            <li class="breakthrough-item">
+                <div class="breakthrough-title">
+                    <i class="fas fa-sun breakthrough-icon"></i>
+                    <strong>Photon as 11D Membrane-Soliton</strong>
+                </div>
+                <div class="breakthrough-content">
+                    Resolution of wave-particle duality through identification of photons as 11-dimensional solitonic structures spanning both spaces A and B. Photons are localized in A but extended in 5 dimensions of B, creating fundamental resonances.
+                </div>
+                <span class="significance-tag significance-high">QUANTUM RESOLUTION</span>
+            </li>
+            
+            <li class="breakthrough-item">
+                <div class="breakthrough-title">
+                    <i class="fas fa-black-hole breakthrough-icon"></i>
+                    <strong>Resolution of Black Hole Singularity</strong>
+                </div>
+                <div class="breakthrough-content">
+                    Prediction of minimal topological knot (~10⁻³⁵ m) instead of mathematical singularity at black hole centers. Provides physical regularization of general relativity's singularities through geometric constraints.
+                </div>
+                <span class="significance-tag">COSMOLOGICAL ADVANCE</span>
+            </li>
+            
+            <li class="breakthrough-item">
+                <div class="breakthrough-title">
+                    <i class="fas fa-calculator breakthrough-icon"></i>
+                    <strong>Derivation of Fundamental Constants</strong>
+                </div>
+                <div class="breakthrough-content">
+                    Quantitative predictions for α (fine-structure constant), G (gravitational constant), mₑ (electron mass), m_μ (muon mass), and m_π (pion mass) from geometric parameters of space B. Connects micro and macro physics through geometry.
+                </div>
+                <span class="significance-tag significance-fundamental">PREDICTIVE POWER</span>
+            </li>
+            
+            <li class="breakthrough-item">
+                <div class="breakthrough-title">
+                    <i class="fas fa-weight-hanging breakthrough-icon"></i>
+                    <strong>Variable Gravitational Constant</strong>
+                </div>
+                <div class="breakthrough-content">
+                    Prediction that G depends on energy scale via "unwinding" of compact time dimensions. Leads to testable consequences: high-energy photons experience weaker gravitational lensing, Einstein rings become energy-dependent.
+                </div>
+                <span class="significance-tag significance-high">TESTABLE PREDICTION</span>
+            </li>
+            
+            <li class="breakthrough-item">
+                <div class="breakthrough-title">
+                    <i class="fas fa-atom breakthrough-icon"></i>
+                    <strong>Geometric Pauli Exclusion Principle</strong>
+                </div>
+                <div class="breakthrough-content">
+                    Derivation of quantum statistics from geometric constraints on soliton overlap in space B. Provides a fundamental geometric basis for fermionic behavior without postulating additional principles.
+                </div>
+                <span class="significance-tag">QUANTUM GEOMETRY</span>
+            </li>
+            
+            <li class="breakthrough-item">
+                <div class="breakthrough-title">
+                    <i class="fas fa-infinity breakthrough-icon"></i>
+                    <strong>Emergent Einstein Field Equations</strong>
+                </div>
+                <div class="breakthrough-content">
+                    Derivation of R_μν - ½g_μνR = 8πG T_μν from statistical principles of Ψ-field configurations. Gravity emerges as a collective effect rather than fundamental force, unifying with quantum framework.
+                </div>
+                <span class="significance-tag significance-fundamental">UNIFICATION</span>
+            </li>
+        </ol>
+        
+        <div class="back-home">
+            <a href="/"><i class="fas fa-arrow-left"></i> Back to Home Page</a>
+        </div>
+    </div>
 </body>
 </html>
