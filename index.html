@@ -96,9 +96,13 @@
             text-decoration: none;
             color: #1565c0;
             font-weight: bold;
+            padding: 5px 10px;
+            border-radius: 4px;
+            transition: background-color 0.3s;
         }
         .nav-links a:hover {
-            text-decoration: underline;
+            background-color: #bbdefb;
+            text-decoration: none;
             color: #0d47a1;
         }
         
@@ -118,6 +122,128 @@
             margin-top: 0;
             padding-bottom: 15px;
             border-bottom: 2px solid #81c784;
+        }
+        
+        /* NOWA SEKCJA: OUR FUTURE - STYL MANIFESTU */
+        .manifesto-section {
+            background: linear-gradient(135deg, #1a237e 0%, #283593 100%);
+            color: white;
+            padding: 50px 40px;
+            border-radius: 20px;
+            margin: 60px 0;
+            position: relative;
+            overflow: hidden;
+            box-shadow: 0 15px 35px rgba(0,0,0,0.2);
+        }
+        
+        .manifesto-section::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            height: 5px;
+            background: linear-gradient(90deg, #ff9800, #ffeb3b, #4caf50);
+        }
+        
+        .manifesto-title {
+            color: #ffeb3b;
+            font-size: 2.2em;
+            text-align: center;
+            margin-top: 0;
+            margin-bottom: 40px;
+            text-shadow: 0 2px 4px rgba(0,0,0,0.3);
+            border-bottom: 3px solid rgba(255, 235, 59, 0.3);
+            padding-bottom: 20px;
+        }
+        
+        .manifesto-subtitle {
+            color: #bbdefb;
+            font-size: 1.3em;
+            text-align: center;
+            margin-bottom: 40px;
+            font-style: italic;
+        }
+        
+        .manifesto-box {
+            background: rgba(255, 255, 255, 0.95);
+            color: #222;
+            padding: 30px;
+            border-radius: 15px;
+            margin: 25px 0;
+            border-right: 8px solid #ff9800;
+            box-shadow: 0 8px 25px rgba(0,0,0,0.15);
+        }
+        
+        .manifesto-box h4 {
+            color: #1a237e;
+            margin-top: 0;
+            font-size: 1.4em;
+            border-bottom: 2px solid #ff9800;
+            padding-bottom: 10px;
+        }
+        
+        .manifesto-quote {
+            font-size: 1.2em;
+            font-style: italic;
+            text-align: center;
+            color: #ffeb3b;
+            margin: 40px 20px;
+            padding: 25px;
+            border-left: 4px solid #ff9800;
+            border-right: 4px solid #ff9800;
+            background: rgba(255, 255, 255, 0.1);
+            border-radius: 10px;
+        }
+        
+        .manifesto-conclusion {
+            background: linear-gradient(to right, #2e7d32, #388e3c);
+            color: white;
+            padding: 35px;
+            border-radius: 15px;
+            margin: 40px 0;
+            text-align: center;
+            border: 3px solid #ffeb3b;
+        }
+        
+        .manifesto-conclusion h4 {
+            color: #ffeb3b;
+            font-size: 1.6em;
+            margin-top: 0;
+        }
+        
+        .manifesto-button {
+            display: inline-block;
+            background: linear-gradient(to right, #ff9800, #ff5722);
+            color: white;
+            padding: 15px 35px;
+            border-radius: 50px;
+            text-decoration: none;
+            font-weight: bold;
+            font-size: 1.1em;
+            margin: 20px 10px;
+            transition: all 0.3s ease;
+            box-shadow: 0 5px 15px rgba(255, 87, 34, 0.3);
+            border: 2px solid white;
+        }
+        
+        .manifesto-button:hover {
+            transform: translateY(-3px);
+            box-shadow: 0 8px 20px rgba(255, 87, 34, 0.5);
+            background: linear-gradient(to right, #ff5722, #ff9800);
+        }
+        
+        .pmes-law {
+            background: rgba(255, 235, 59, 0.15);
+            padding: 25px;
+            border-radius: 12px;
+            margin: 30px 0;
+            border: 2px dashed #ffeb3b;
+        }
+        
+        .pmes-law h4 {
+            color: #ffeb3b !important;
+            border-bottom: 1px solid rgba(255, 235, 59, 0.5) !important;
         }
         
         .equation-box {
@@ -304,28 +430,38 @@
                 overflow-x: auto;
             }
             
-            .gravity-section, .constants-section {
+            .gravity-section, .constants-section, .manifesto-section {
                 padding: 20px;
+            }
+            
+            .manifesto-title {
+                font-size: 1.8em;
+            }
+            
+            .nav-links a {
+                display: block;
+                margin: 8px 0;
+                padding: 10px;
             }
         }
     </style>
 </head>
 <body>
     <h1>PMES Theory: Photon-Membrane & Equilibrium Singularity</h1>
-    <div class="subtitle">A Unified Geometric Framework for Fundamental Physics</div>
+    <div class="subtitle">A Unified Geometric Framework for Fundamental Physics and Civilizational Survival</div>
 
     <div class="nav-links">
-        <a href="#core-ontology">Core Ontology</a> |
-        <a href="#fundamental-field">Fundamental Field & Photons</a> |
-        <a href="#emergent-phenomena">Emergent Phenomena</a> |
-        <a href="#gravity-explanation">Gravity in A</a> |
-        <a href="#constants-table">Fundamental Constants</a> |
-        <a href="#open-problems">Open Problems</a> |
-        <a href="#philosophical-summary">Philosophical Summary</a> |
-        <a href="#tables">G Calculation Tables</a>
+        <a href="#core-ontology">Core Ontology</a>
+        <a href="#fundamental-field">Fundamental Field</a>
+        <a href="#emergent-phenomena">Emergent Phenomena</a>
+        <a href="#gravity-explanation">Gravity</a>
+        <a href="#constants-table">Constants</a>
+        <a href="#our-future">OUR FUTURE</a>
+        <a href="#open-problems">Open Problems</a>
+        <a href="#philosophical-summary">Philosophy</a>
     </div>
 
-    <p>A unified field theory framework that explains gravity, quantum phenomena, particle masses, and the structure of spacetime through geometry of higher-dimensional membranes.</p>
+    <p>A unified field theory framework that explains gravity, quantum phenomena, particle masses, and the structure of spacetime through geometry of higher-dimensional membranes, with profound implications for civilization's survival strategy.</p>
 
     <h3 id="core-principles">Core Principles</h3>
     <ul>
@@ -333,6 +469,7 @@
         <li>Photons as 11D solitons (membranes) connecting spaces A and B</li>
         <li>Emergent 4D spacetime as a low-energy projection of 6D space A</li>
         <li>Gravity and particle masses from boundary conditions and resonance in B</li>
+        <li><strong>New:</strong> Economic and civilizational principles emerge from the same geometry</li>
     </ul>
 
     <h2 id="core-ontology">1. Core Ontology: The Dual-Space Geometry</h2>
@@ -722,28 +859,6 @@
         <p><strong>Remarkable achievement:</strong> PMES Theory derives all fundamental constants of nature (m_e, m_μ, m_π, α, G) from geometric first principles with precision matching experimental measurements.</p>
     </div>
 
-    <h2 id="open-problems">4. Open Problems and Research Directions</h2>
-    <ul>
-        <li>Solve the full soliton equation: [□_A + □_B - V'(|Ψ|²)] Ψ_sol = 0.</li>
-        <li>Derive Maxwell's Equations from a U(1) phase symmetry of the Ψ field.</li>
-        <li>Formally show the reduction to General Relativity: R_μν - (1/2)g_μνR = 8πG T_μν.</li>
-        <li>Detail the phase transition mechanism (parabolic rotation) from B to A.</li>
-        <li>Explain the emergence of fermions (e.g., as topological skyrmions within the B space framework).</li>
-    </ul>
-
-    <h2 id="philosophical-summary">5. Philosophical Summary: A Cohesive Vision</h2>
-    <div class="principle-box">
-        <p>PMES presents a coherent ontology:</p>
-        <ul>
-            <li><strong>Ψ is fundamental.</strong> Spacetime, matter, and forces are emergent excitations.</li>
-            <li><strong>Space B</strong> is mathematically real but physically inaccessible, serving as the source geometry.</li>
-            <li><strong>Space A</strong> is the full 6D physical reality, of which we ordinarily perceive only a 4D projection.</li>
-            <li><strong>Photons are the "glue"</strong>—solitonic membranes connecting the two spaces and facilitating all interaction.</li>
-            <li>Mass, charge, and spin are quantum numbers arising from topological and resonant properties of Ψ configurations in B.</li>
-            <li><strong>Dark Energy</strong> may be interpreted as the energy of the dynamic coupling between spaces A and B.</li>
-        </ul>
-    </div>
-
     <h2 id="tables">The Problem of Calculating G: Dimensional Analysis</h2>
     <p>Issue in calculating G using formulas from other theories. As the number of dimensions increases, D rises. For 10D, it was 6.5. For 12D, it is 7.</p>
 
@@ -798,11 +913,136 @@
         <p><strong>Analysis:</strong> The tables show that the observed value of Newton's gravitational constant G is matched precisely for the case of <strong>N=10 effective dimensions</strong> (highlighted in green). This corresponds to the PMES framework where 6 dimensions come from space A and 4 active dimensions come from space B, with two time dimensions in B being "inactive" or compactified at low energies. This provides a geometric rationale for the specific dimensional structure of our observed reality and suggests that G is not a fundamental constant but an emergent, scale-dependent parameter.</p>
     </div>
 
+    <!-- ============================================ -->
+    <!-- NOWA SEKCJA: OUR FUTURE - THE MANIFESTO -->
+    <!-- ============================================ -->
+    
+    <div class="manifesto-section" id="our-future">
+        <h2 class="manifesto-title">OUR FUTURE: The PMES Civilizational Imperative</h2>
+        <div class="manifesto-subtitle">Why Understanding PMES Theory is Essential for Human Survival</div>
+        
+        <div class="manifesto-quote">
+            "The ultimate test of a theory is not just how well it predicts physical constants, but how well it guides civilization toward survival and flourishing."
+        </div>
+        
+        <div class="manifesto-box">
+            <h4>The Fundamental Discovery</h4>
+            <p>PMES Theory reveals more than the geometry of spacetime—it reveals the <strong>geometry of survival</strong>. The same principles that govern particle resonances in space B govern the success or failure of civilizations in our observed reality.</p>
+            
+            <div class="pmes-law">
+                <h4>The PMES Law of Civilizational Dynamics:</h4>
+                <p><strong>"The cause of the fall of every empire, every fortune, and every process is the blocking and destruction of subsystems it deems improper or competitive."</strong></p>
+                <p>This isn't just historical observation—it's a <em>physical law</em> emerging from the geometry of Ψ configurations in space B.</p>
+            </div>
+        </div>
+        
+        <div class="manifesto-box">
+            <h4>The Physics of Collapse vs. Survival</h4>
+            <p>In PMES terms:</p>
+            <ul>
+                <li><strong>Short-term empires</strong> are like unstable, high-energy solitons: they burn bright but quickly dissipate due to destructive internal resonances.</li>
+                <li><strong>Long-term civilizations</strong> are like stable resonant solitons: they exist in harmony with boundary conditions, absorb fluctuations, and persist.</li>
+                <li><strong>Our current civilization</strong> operates as a collection of competing unstable solitons, creating destructive interference patterns visible as climate disruption, inequality, and geopolitical conflict.</li>
+            </ul>
+        </div>
+        
+        <div class="manifesto-box">
+            <h4>The Grand Bargain of Existence</h4>
+            <p>PMES reveals that reality is fundamentally <strong>non-zero-sum</strong>. The universe doesn't favor the brutal—it favors the resilient. And resilience emerges from:</p>
+            
+            <div class="factor-list" style="background: rgba(255,255,255,0.9);">
+                <ul>
+                    <li><strong>Connectivity</strong> (preserving interaction pathways in B-space geometry)</li>
+                    <li><strong>Diversity</strong> (maintaining multiple Ψ-configuration possibilities)</li>
+                    <li><strong>Preservation of Potential</strong> (not destroying future opportunity spaces)</li>
+                </ul>
+            </div>
+            
+            <p>This translates directly to civilizational strategy: <strong>Winning means letting others live.</strong> Not out of altruism, but because destroying competitors (nations, ecosystems, ideas) eliminates the very feedback loops and innovations needed for long-term survival.</p>
+        </div>
+        
+        <div class="manifesto-box">
+            <h4>The Choice Before Us</h4>
+            <p>We stand at a <strong>civilizational phase transition point</strong>, analogous to the parabolic rotation from B→A space. Two pathways:</p>
+            
+            <table style="background: white; color: #222; width: 100%; border-collapse: collapse; margin: 20px 0; box-shadow: 0 5px 15px rgba(0,0,0,0.1);">
+                <thead>
+                    <tr>
+                        <th style="background: #f44336; color: white; padding: 15px; text-align: center;">Path A: Current Course</th>
+                        <th style="background: #4CAF50; color: white; padding: 15px; text-align: center;">Path B: PMES Alignment</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td style="padding: 15px; border: 1px solid #eee; border-left: 5px solid #f44336;">Short-term optimization (quarterly profits, election cycles)</td>
+                        <td style="padding: 15px; border: 1px solid #eee; border-left: 5px solid #4CAF50;">Infinite-time optimization (centuries, millennia)</td>
+                    </tr>
+                    <tr>
+                        <td style="padding: 15px; border: 1px solid #eee; border-left: 5px solid #f44336;">Blocking competitors and "improper" processes</td>
+                        <td style="padding: 15px; border: 1px solid #eee; border-left: 5px solid #4CAF50;">Co-evolution with competitors and ecosystems</td>
+                    </tr>
+                    <tr>
+                        <td style="padding: 15px; border: 1px solid #eee; border-left: 5px solid #f44336;">Externalizing costs onto environment/society</td>
+                        <td style="padding: 15px; border: 1px solid #eee; border-left: 5px solid #4CAF50;">Internalizing full systemic costs</td>
+                    </tr>
+                    <tr>
+                        <td style="padding: 15px; border: 1px solid #eee; border-left: 5px solid #f44336;"><strong>Result:</strong> High probability of systemic collapse (>70% in 50-150 years)</td>
+                        <td style="padding: 15px; border: 1px solid #eee; border-left: 5px solid #4CAF50;"><strong>Result:</strong> Pathway to stable Type I civilization</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+        
+        <div class="manifesto-conclusion">
+            <h4>This is Not Just Physics—It's Our Survival Manual</h4>
+            <p>PMES Theory gives us more than equations—it gives us a <strong>navigation system</strong> for the 21st century. The same geometric principles that correctly predict the gravitational constant also prescribe our path to survival:</p>
+            
+            <p><strong>Optimize for infinite time. Preserve potential. Win by letting live.</strong></p>
+            
+            <div style="margin-top: 30px;">
+                <a href="#core-ontology" class="manifesto-button">Understand the Physics</a>
+                <a href="#constants-table" class="manifesto-button">See the Evidence</a>
+                <a href="ourfuture.html" class="manifesto-button" style="background: linear-gradient(to right, #1a237e, #283593);">Full Manifesto →</a>
+            </div>
+        </div>
+        
+        <div class="footnote" style="color: #bbdefb; border-top: 1px dashed rgba(255,255,255,0.3); margin-top: 40px; padding-top: 20px;">
+            <p><strong>Note:</strong> This analysis merges PMES Theory with systems theory, game theory, and historical analysis. The survival probabilities are estimates based on current trajectory analysis. The key insight is that <strong>changing our operating logic changes the probability distribution of outcomes</strong>—and PMES provides the correct logic.</p>
+        </div>
+    </div>
+
+    <!-- ============== KONTYNUACJA PO SEKCJI OUR FUTURE ============== -->
+
+    <h2 id="open-problems">6. Open Problems and Research Directions</h2>
+    <ul>
+        <li>Solve the full soliton equation: [□_A + □_B - V'(|Ψ|²)] Ψ_sol = 0.</li>
+        <li>Derive Maxwell's Equations from a U(1) phase symmetry of the Ψ field.</li>
+        <li>Formally show the reduction to General Relativity: R_μν - (1/2)g_μνR = 8πG T_μν.</li>
+        <li>Detail the phase transition mechanism (parabolic rotation) from B to A.</li>
+        <li>Explain the emergence of fermions (e.g., as topological skyrmions within the B space framework).</li>
+        <li><strong>New:</strong> Develop the mathematical model linking Ψ-field statistics to economic and civilizational dynamics.</li>
+    </ul>
+
+    <h2 id="philosophical-summary">7. Philosophical Summary: A Cohesive Vision</h2>
+    <div class="principle-box">
+        <p>PMES presents a coherent ontology:</p>
+        <ul>
+            <li><strong>Ψ is fundamental.</strong> Spacetime, matter, forces, and civilizational dynamics are emergent excitations.</li>
+            <li><strong>Space B</strong> is mathematically real but physically inaccessible, serving as the source geometry for both physics and societal patterns.</li>
+            <li><strong>Space A</strong> is the full 6D physical reality, of which we ordinarily perceive only a 4D projection.</li>
+            <li><strong>Photons are the "glue"</strong>—solitonic membranes connecting the two spaces and facilitating all interaction.</li>
+            <li>Mass, charge, and spin are quantum numbers arising from topological and resonant properties of Ψ configurations in B.</li>
+            <li><strong>Civilizational success/failure</strong> follows the same geometric principles as particle stability in B-space.</li>
+            <li><strong>Dark Energy</strong> may be interpreted as the energy of the dynamic coupling between spaces A and B.</li>
+        </ul>
+    </div>
+
     <div class="nav-links">
         <a href="#core-principles">↑ Back to Top</a> |
-        <a href="/breakthroughs.html">Key Breakthroughs</a> |
-        <a href="/publications.html">Publications</a> |
-        <a href="/contact.html">Contact</a>
+        <a href="#our-future">Our Future Project</a> |
+        <a href="ourfuture.html">Full Manifesto</a> |
+        <a href="#constants-table">Fundamental Constants</a> |
+        <a href="https://zenodo.org/records/18102648" target="_blank">Zenodo Archive</a>
     </div>
 </body>
 </html>
