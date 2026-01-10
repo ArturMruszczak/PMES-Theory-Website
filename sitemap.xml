@@ -1,32 +1,110 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<urlset
-      xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
-      xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
-      xsi:schemaLocation="http://www.sitemaps.org/schemas/sitemap/0.9
-            http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd">
-<!-- created with Free Online Sitemap Generator www.xml-sitemaps.com -->
-
-
-<url>
-  <loc>https://pmes-theory.org/</loc>
-  <lastmod>2025-12-29T08:28:33+00:00</lastmod>
-  <priority>1.00</priority>
-</url>
-<url>
-  <loc>https://pmes-theory.org/breakthroughs.html</loc>
-  <lastmod>2025-12-29T08:28:33+00:00</lastmod>
-  <priority>0.80</priority>
-</url>
-<url>
-  <loc>https://pmes-theory.org/publications.html</loc>
-  <lastmod>2025-12-29T08:28:33+00:00</lastmod>
-  <priority>0.80</priority>
-</url>
-<url>
-  <loc>https://pmes-theory.org/contact.html</loc>
-  <lastmod>2025-12-29T08:28:33+00:00</lastmod>
-  <priority>0.80</priority>
-</url>
-
-
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
+        xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+        xsi:schemaLocation="http://www.sitemaps.org/schemas/sitemap/0.9
+        http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd">
+    
+    <!-- Główna strona PMES Theory -->
+    <url>
+        <loc>https://twoja-domena.com/</loc>
+        <lastmod>2024-12-31</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>1.0</priority>
+    </url>
+    
+    <!-- Strona główna (index.html) -->
+    <url>
+        <loc>https://twoja-domena.com/index.html</loc>
+        <lastmod>2024-12-31</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>1.0</priority>
+    </url>
+    
+    <!-- Sekcje z anchor links (jeśli chcesz indeksować fragmenty) -->
+    <url>
+        <loc>https://twoja-domena.com/index.html#core-ontology</loc>
+        <lastmod>2024-12-31</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.9</priority>
+    </url>
+    
+    <url>
+        <loc>https://twoja-domena.com/index.html#fundamental-field</loc>
+        <lastmod>2024-12-31</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.9</priority>
+    </url>
+    
+    <url>
+        <loc>https://twoja-domena.com/index.html#psi-field</loc>
+        <lastmod>2024-12-31</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.9</priority>
+    </url>
+    
+    <url>
+        <loc>https://twoja-domena.com/index.html#gravity-explanation</loc>
+        <lastmod>2024-12-31</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.9</priority>
+    </url>
+    
+    <url>
+        <loc>https://twoja-domena.com/index.html#g-formula</loc>
+        <lastmod>2024-12-31</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.9</priority>
+    </url>
+    
+    <url>
+        <loc>https://twoja-domena.com/index.html#constants-table</loc>
+        <lastmod>2024-12-31</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.9</priority>
+    </url>
+    
+    <url>
+        <loc>https://twoja-domena.com/index.html#our-future</loc>
+        <lastmod>2024-12-31</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.8</priority>
+    </url>
+    
+    <!-- Inne strony (jeśli istnieją) -->
+    <url>
+        <loc>https://twoja-domena.com/ourfuture.html</loc>
+        <lastmod>2024-12-31</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.7</priority>
+    </url>
+    
+    <url>
+        <loc>https://twoja-domena.com/papers.html</loc>
+        <lastmod>2024-12-31</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.6</priority>
+    </url>
+    
+    <url>
+        <loc>https://twoja-domena.com/downloads.html</loc>
+        <lastmod>2024-12-31</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.5</priority>
+    </url>
+    
+    <url>
+        <loc>https://twoja-domena.com/contact.html</loc>
+        <lastmod>2024-12-31</lastmod>
+        <changefreq>yearly</changefreq>
+        <priority>0.4</priority>
+    </url>
+    
+    <!-- Linki zewnętrzne (ważne dla SEO) -->
+    <url>
+        <loc>https://zenodo.org/records/18102648</loc>
+        <lastmod>2024-12-31</lastmod>
+        <changefreq>yearly</changefreq>
+        <priority>0.3</priority>
+    </url>
+    
 </urlset>
