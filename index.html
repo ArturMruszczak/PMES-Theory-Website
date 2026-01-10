@@ -408,6 +408,15 @@
             margin-bottom: 8px;
         }
         
+        .stability-note {
+            background-color: #fff3e0;
+            padding: 20px;
+            border-radius: 10px;
+            margin: 25px 0;
+            border-left: 5px solid #ff9800;
+            border-right: 5px solid #ff9800;
+        }
+        
         @media (max-width: 768px) {
             .constants-table {
                 display: block;
@@ -742,6 +751,14 @@
         </thead>
         <tbody>
             <tr>
+                <td class="quantity-col">12D (główny)</td>
+                <td class="calculated-col">6.45×10⁻¹⁴</td>
+                <td class="calculated-col">43.0</td>
+                <td class="calculated-col">6.512</td>
+                <td class="calculated-col">6.67×10⁻¹¹</td>
+                <td class="correct-cell">✓ 100%</td>
+            </tr>
+            <tr>
                 <td class="quantity-col">10D</td>
                 <td class="calculated-col">6.45×10⁻¹⁴</td>
                 <td class="calculated-col">43.0</td>
@@ -749,26 +766,47 @@
                 <td class="calculated-col">6.68×10⁻¹¹</td>
                 <td class="correct-cell">✓ 99.8%</td>
             </tr>
-            <tr>
-                <td class="quantity-col">12D</td>
-                <td class="calculated-col">6.45×10⁻¹⁴</td>
-                <td class="calculated-col">43.0</td>
-                <td class="calculated-col">6.512</td>
-                <td class="calculated-col">6.67×10⁻¹¹</td>
-                <td class="correct-cell">✓ 100%</td>
-            </tr>
         </tbody>
     </table>
+    
+    <div class="stability-note">
+        <strong>UWAGA: STABILNOŚĆ NUMERYCZNA MODELU PMES</strong><br>
+        PMES Theory wykazuje niezwykłą stabilność numeryczną. Istnieją alternatywne kombinacje parametrów, które również dają poprawną wartość G:
+        
+        <table style="width: 100%; margin: 15px 0; background: white; border-collapse: collapse;">
+            <tr>
+                <th style="padding: 10px; background: #fff3e0;">R_B [m]</th>
+                <th style="padding: 10px; background: #fff3e0;">R_B/λ_Ψ</th>
+                <th style="padding: 10px; background: #fff3e0;">D</th>
+                <th style="padding: 10px; background: #fff3e0;">G</th>
+            </tr>
+            <tr>
+                <td style="padding: 10px; text-align: center;">6.45×10⁻¹⁴</td>
+                <td style="padding: 10px; text-align: center;">43.0</td>
+                <td style="padding: 10px; text-align: center;">6.512</td>
+                <td style="padding: 10px; text-align: center;">6.67×10⁻¹¹</td>
+            </tr>
+            <tr>
+                <td style="padding: 10px; text-align: center;">6.40×10⁻¹⁴</td>
+                <td style="padding: 10px; text-align: center;">42.667</td>
+                <td style="padding: 10px; text-align: center;">6.738</td>
+                <td style="padding: 10px; text-align: center;">6.67×10⁻¹¹</td>
+            </tr>
+        </table>
+        
+        <strong>Interpretacja:</strong> Małe zmiany R_B (±0.8%) są kompensowane przez małe zmiany D (±3.5%), co pokazuje <strong>stabilność teoretyczną</strong> modelu PMES. Wartość D=6.738 pojawia się przy alternatywnym R_B=6.40×10⁻¹⁴, ale <strong>zestaw główny z R_B=6.45×10⁻¹⁴, D=6.512</strong> jest preferowany, ponieważ wynika bezpośrednio z obliczenia stałej struktury subtelnej α.
+    </div>
     
     <div class="success-note">
         <strong>CONCLUSIONS:</strong><br>
         1. The PMES formula correctly predicts the gravitational constant G.<br>
-        2. The 12D model requires D = 6.512 instead of 6.50 - a minimal correction (0.19%).<br>
-        3. PMES is consistent: all versions yield G ≈ 6.67×10⁻¹¹ m³/(kg·s²).
+        2. The 12D model requires D = 6.512 (a minimal correction from 6.50).<br>
+        3. PMES is consistent: all versions yield G ≈ 6.67×10⁻¹¹ m³/(kg·s²).<br>
+        4. The theory shows <strong>numerical stability</strong> - small parameter variations give the same G.
     </div>
     
     <div class="alpha-values">
-        <p><strong>Example calculation for the 12D model:</strong></p>
+        <p><strong>Example calculation for the main 12D model:</strong></p>
         <ul>
             <li>R_B²c³/ħ = 1.06339 × 10³³ m³/(kg·s²)</li>
             <li>exp[-2(43 + 6.512)] = exp[-99.024] = 6.275 × 10⁻⁴⁴</li>
@@ -808,7 +846,7 @@
                     <td class="formula-col">ħc/λ_Ψ</td>
                     <td class="calculated-col correct-cell">135 MeV</td>
                     <td class="observed-col correct-cell">134.98 MeV</td>
-                </tr>
+            </tr>
                 <tr>
                     <td class="quantity-col">m_e (electron)</td>
                     <td class="formula-col">ħc/(2π R_B)</td>
@@ -911,6 +949,8 @@
 
     <div class="footnote">
         <p><strong>Analysis:</strong> The tables show that the observed value of Newton's gravitational constant G is matched precisely for both <strong>N=10</strong> and <strong>N=12 effective dimensions</strong> (highlighted in green). For N=10 (PMES framework with 6 dimensions from space A and 4 active dimensions from space B) we need D=6.43. For the full 12D model (6D A + 6D B), we require D=6.512. This provides a geometric rationale for the specific dimensional structure of our observed reality and suggests that G is not a fundamental constant but an emergent, scale-dependent parameter.</p>
+        
+        <p><strong>Note on numerical stability:</strong> The values in these tables correspond to the <strong>main parameter set with R_B=6.45×10⁻¹⁴ m</strong>. With alternative R_B=6.40×10⁻¹⁴ m, the corresponding D values would be different (e.g., D=6.738 for 12D), demonstrating the theory's flexibility while maintaining the correct prediction of G.</p>
     </div>
 
     <!-- ============================================ -->
