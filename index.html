@@ -106,7 +106,123 @@
             color: #0d47a1;
         }
         
-        /* Styl dla sekcji GRAWITACJI */
+        /* NOWA SEKCJA - SPHERICAL PROJECTION COSMOLOGY */
+        .spherical-section {
+            background: linear-gradient(135deg, #1a237e 0%, #283593 30%, #3949ab 100%);
+            color: white;
+            padding: 50px 40px;
+            border-radius: 20px;
+            margin: 20px 0 60px 0;
+            position: relative;
+            overflow: hidden;
+            box-shadow: 0 15px 35px rgba(26, 35, 126, 0.3);
+            border: 3px solid #5c6bc0;
+        }
+        
+        .spherical-section::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            height: 5px;
+            background: linear-gradient(90deg, #ff9800, #ffeb3b, #4caf50);
+        }
+        
+        .spherical-title {
+            color: #ffeb3b;
+            font-size: 2.2em;
+            text-align: center;
+            margin-top: 0;
+            margin-bottom: 30px;
+            text-shadow: 0 2px 4px rgba(0,0,0,0.3);
+            border-bottom: 3px solid rgba(255, 235, 59, 0.3);
+            padding-bottom: 20px;
+        }
+        
+        .spherical-subtitle {
+            color: #bbdefb;
+            font-size: 1.3em;
+            text-align: center;
+            margin-bottom: 40px;
+            font-style: italic;
+            background: rgba(0, 0, 0, 0.2);
+            padding: 15px;
+            border-radius: 10px;
+            border-left: 4px solid #ff9800;
+        }
+        
+        .spherical-box {
+            background: rgba(255, 255, 255, 0.95);
+            color: #222;
+            padding: 25px;
+            border-radius: 15px;
+            margin: 20px 0;
+            border-left: 8px solid #3949ab;
+            box-shadow: 0 8px 25px rgba(0,0,0,0.15);
+        }
+        
+        .spherical-box h4 {
+            color: #1a237e;
+            margin-top: 0;
+            font-size: 1.4em;
+            border-bottom: 2px solid #3949ab;
+            padding-bottom: 10px;
+        }
+        
+        .spherical-note {
+            background: rgba(255, 235, 59, 0.15);
+            padding: 20px;
+            border-radius: 12px;
+            margin: 25px 0;
+            border: 2px dashed #ffeb3b;
+            color: #fff;
+            font-size: 1.1em;
+        }
+        
+        .spherical-note strong {
+            color: #ffeb3b;
+        }
+        
+        .spherical-equation {
+            background: rgba(255, 255, 255, 0.1);
+            padding: 20px;
+            border-radius: 10px;
+            margin: 20px 0;
+            border: 2px solid #5c6bc0;
+            font-family: 'Courier New', monospace;
+            text-align: center;
+            font-size: 1.2em;
+            color: #fff;
+        }
+        
+        .spherical-list {
+            background: rgba(255, 255, 255, 0.1);
+            padding: 20px;
+            border-radius: 10px;
+            margin: 20px 0;
+        }
+        
+        .spherical-list li {
+            margin-bottom: 12px;
+            color: #e8eaf6;
+        }
+        
+        .dimensional-note {
+            background: rgba(255, 152, 0, 0.2);
+            padding: 25px;
+            border-radius: 12px;
+            margin: 30px 0;
+            border: 2px solid #ff9800;
+            color: #fff;
+        }
+        
+        .dimensional-note h4 {
+            color: #ffeb3b;
+            margin-top: 0;
+        }
+        
+        /* Reszta istniejących stylów pozostaje bez zmian */
         .gravity-section {
             background: linear-gradient(to right, #f0f7ff, #e8f5e9);
             padding: 35px;
@@ -124,7 +240,6 @@
             border-bottom: 2px solid #81c784;
         }
         
-        /* NOWA SEKCJA: OUR FUTURE - STYL MANIFESTU */
         .manifesto-section {
             background: linear-gradient(135deg, #1a237e 0%, #283593 100%);
             color: white;
@@ -278,7 +393,6 @@
             font-weight: bold;
         }
         
-        /* Styl dla tabeli stałych */
         .constants-section {
             background: linear-gradient(to right, #fff8e1, #fffde7);
             padding: 35px;
@@ -439,11 +553,11 @@
                 overflow-x: auto;
             }
             
-            .gravity-section, .constants-section, .manifesto-section {
+            .gravity-section, .constants-section, .manifesto-section, .spherical-section {
                 padding: 20px;
             }
             
-            .manifesto-title {
+            .spherical-title, .manifesto-title {
                 font-size: 1.8em;
             }
             
@@ -456,6 +570,116 @@
     </style>
 </head>
 <body>
+    <!-- ============================================ -->
+    <!-- NOWA SEKCJA: SPHERICAL PROJECTION COSMOLOGY -->
+    <!-- ============================================ -->
+    
+    <div class="spherical-section">
+        <h2 class="spherical-title">Spherical Projection Cosmology: A New Paradigm</h2>
+        
+        <div class="spherical-subtitle">
+            <strong>Research Note:</strong> Initial calculations were performed for 12D space (3+3 for B and 3+3 for A). 
+            We are currently investigating a simplified model of 4D geometric B space with observable 3+1 A space.
+        </div>
+        
+        <div class="spherical-note">
+            <strong>Abstract:</strong> We propose a radical ontological model where observed reality (Universe A: 3+1 spacetime) 
+            is a deterministic, cinematic projection of a single irreversible physical process in a foundational 4D geometric 
+            space (Realm B). The core mechanism is the global topological compactification of one dimension in B (z_B), 
+            initiating a spherical crystallization wave whose expanding 2D surface S(t) is mapped onto our entire 3D spatial 
+            reality via a fixed transformation R.
+        </div>
+        
+        <div class="spherical-box">
+            <h4>Key Discovery: The Perceptual Fallacy of Flatness</h4>
+            <p>Human perception, shaped by evolution in local environments, is inherently Euclidean. We intuitively perceive 
+            space as flat and infinite, just as ancient cultures perceived Earth as flat. The Spherical Projection Cosmology 
+            reveals this as a profound illusion:</p>
+            
+            <ul class="spherical-list">
+                <li>Our 3D universe is not fundamental but a <strong>"flat chart"</strong> projecting a fundamentally spherical process</li>
+                <li>The observed flatness of the universe (from CMB) is not a property of the thing itself, but of the <strong>map</strong> we are using</li>
+                <li>We are like characters in a film, mistaking the properties of the screen for the laws of creation</li>
+            </ul>
+        </div>
+        
+        <div class="spherical-box">
+            <h4>The Two Realms: B (Geometry) and A (Projection)</h4>
+            
+            <p><strong>Realm B:</strong> A 4D geometric space where dimension z_B undergoes global topological compactification 
+            when energy density exceeds critical threshold. This creates a crystallization wavefront—a 2-sphere S(t) with 
+            radius R(t) that expands. Behind the front, degrees of freedom "freeze" into a crystalline lattice with topological 
+            defects (solitons).</p>
+            
+            <p><strong>Realm A (Our Universe):</strong> Not an independent physical space but a projected image. A fixed 
+            transformation R maps states from B to A. Crucially: <strong>Perceived time t_A is the unwrapped linear coordinate 
+            of the compactified loop z_B.</strong></p>
+            
+            <div class="spherical-equation">
+                R: (x_B, y_B, w_B, z_B) → (t_A, x_A, y_A, z_A) where t_A = z_B
+            </div>
+        </div>
+        
+        <div class="spherical-box">
+            <h4>Cosmology as Geometric Illusion</h4>
+            
+            <p>Our "now" in A corresponds to projection of the entire current crystallization sphere S(t) in B:</p>
+            
+            <ul class="spherical-list">
+                <li><strong>Flatness Problem Solved:</strong> Transformation R (like stereographic projection) naturally produces 
+                a flat Euclidean image. Observed flatness (Ω≈1) is a geometric necessity of projection R</li>
+                
+                <li><strong>Hubble's Law Without Motion:</strong> In successive "frames" of the A-film, sphere S(t) has larger 
+                radius R(t). Fixed projection R maps same angular position to different radial coordinate on flat plane</li>
+                
+                <li><strong>Redshift Formula:</strong> 1 + z = R(t_observation) / R(t_defect_formation) — not Doppler shift but projection scaling factor</li>
+                
+                <li><strong>Horizon Illusion:</strong> Observer in A has flat perceptual screen that cannot faithfully represent 
+                entire sphere. Maximum angular distance θ_max shrinks as S(t) expands</li>
+            </ul>
+        </div>
+        
+        <div class="dimensional-note">
+            <h4>Dimensional Context: From 12D to Simplified 4D Model</h4>
+            <p>The original PMES framework considered 12D space (6D A + 6D B). Current research focuses on a simplified 
+            but equally profound model: <strong>4D geometric B space</strong> with one compactified dimension z_B, producing 
+            observable 3+1 A spacetime through spherical projection.</p>
+            
+            <p>This simplification maintains all key insights while making the geometric relationships more transparent. 
+            The 4D→3+1 projection captures the essential illusion: we perceive a flat 3D space while actually "living on" 
+            (our consciousness being projected from) an expanding 2-sphere in higher-dimensional B space.</p>
+        </div>
+        
+        <div class="spherical-box">
+            <h4>Testable Predictions Differing from ΛCDM</h4>
+            
+            <ul class="spherical-list">
+                <li><strong>CMB Anomalies:</strong> Large-scale statistical anisotropies (e.g., "Axis of Evil") as signatures 
+                of our specific vantage point on sphere S(t_CMB)</li>
+                
+                <li><strong>Black Hole Interiors:</strong> Not singularities but static, crystallized vortices in B with 
+                possible re-ignition from internal energy accumulation</li>
+                
+                <li><strong>No Quantum Gravity Singularity:</strong> Big Bang corresponds to initiation of crystallization 
+                wave in B (R(t)→0) — a geometric phase boundary</li>
+                
+                <li><strong>Variable G Interpretation:</strong> Gravitational "constant" emerges from statistics of 
+                defect interactions in B, potentially scale-dependent</li>
+            </ul>
+        </div>
+        
+        <div class="spherical-note">
+            <strong>Philosophical Implication:</strong> Reality as we experience it is a "film" with no free will — 
+            a one-time playback of a geometric transition in a higher-dimensional substrate. Consciousness in A is 
+            not a causal agent but a pattern within the film, an emergent property of complex defect configurations 
+            on the crystallization front in B.
+        </div>
+    </div>
+
+    <!-- ============================================ -->
+    <!-- ORYGINALNA TREŚĆ STRONY PMES THEORY -->
+    <!-- ============================================ -->
+    
     <h1>PMES Theory: Photon-Membrane & Equilibrium Singularity</h1>
     <div class="subtitle">A Unified Geometric Framework for Fundamental Physics and Civilizational Survival</div>
 
